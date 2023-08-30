@@ -41,6 +41,12 @@ header nav{
 }
 
 /* About section styling */
+.about img{
+    width: 90px;
+    height: 90px;
+    filter: none;
+    position:static;
+}
 .about h2{
     font-size: 25px;
     text-align: center;
@@ -57,33 +63,40 @@ header nav{
 .about p{
     padding: 5px;
 }
-
-/* My projects section styling */
-.myprojects{
-    padding: 30px;
-}
-.myprojects h2{
+h2{
     font-size: 25px;
     text-align: center;
-    padding: 15px;
+    padding-top: 15px;
     font-weight: bold;
 }
+/* My projects section styling */
 .center {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/*First-project styling*/
-#first-project{
+/* card styling */
+.project-card{
     padding: 30px ;
     font-size: 16px;
-    text-align: left;
-    height: 500px;
-    border:#36454F 5px solid;
+    border:#36454F 10px solid;
     position: relative;
+    width: 740px;
+    height: 500px;
+    margin: 10px;
+}
+/*First-project styling*/
+#first-project{
     width: 1500px;
 }
+/*rest of projects styling */
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*text box card styling*/
 .text-box{
     color: #fff;
     background-color: #36454F;
@@ -94,40 +107,12 @@ header nav{
     padding: 20px;
     position: absolute;
     top: 72.5%;
-    left: 1px;
+    left: 0;
 }
 .text-box h3{
     font-size: 25px;
     font-weight: bold;
     text-decoration: underline;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.project{
-    padding: 30px ;
-    font-size: 16px;
-    text-align: left;
-    height: 500px;
-    border:#36454F 5px solid;
-    position: relative;
-    width: 740px;
-    height: 500px;
-    margin: -10px 10px 10px 10px;
-}
-.project2{
-    padding: 30px ;
-    font-size: 16px;
-    text-align: left;
-    height: 500px;
-    border:#36454F 5px solid;
-    position: relative;
-    width: 740px;
-    height: 500px;
-    margin: 10px;
 }
 /*all image styling*/
 img{
@@ -139,7 +124,6 @@ img{
     filter: blur(6px);
     -webkit-filter: blur(6px);
 }
-
 /* Footer styling */
 footer{
     background-color: #061E45;
